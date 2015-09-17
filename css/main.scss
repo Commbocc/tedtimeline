@@ -30,7 +30,7 @@ body {
 
 #mainJumbo {
 	margin-top: -20px;
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-476997316.jpg');
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
 }
 
 #infoJumbo {
@@ -64,17 +64,17 @@ body {
 	}
 
 
-	#item0 {
-		@include trans-bg-image($brand-warning, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg');
-	}
+	// #item0 {
+	// 	@include trans-bg-image($brand-warning, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg');
+	// }
 
-	#item1 {
-		@include trans-bg-image($brand-primary, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg');
-	}
+	// #item1 {
+	// 	@include trans-bg-image($brand-primary, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg');
+	// }
 
-	#item2 {
-		@include trans-bg-image($brand-success, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg');
-	}
+	// #item2 {
+	// 	@include trans-bg-image($brand-success, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg');
+	// }
 }
 
 .jumbotron {
