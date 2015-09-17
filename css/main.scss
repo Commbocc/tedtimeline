@@ -92,7 +92,7 @@ body {
 	background-position: center center;
 	// background-attachment: fixed;
 	background-size: cover;
-	
+
 }
 
 .jumbo-parallax {
@@ -131,6 +131,10 @@ body {
 		font-size: 1.3em;
 		padding: 20px;
 	}
+}
+
+.table-condensed > tbody > tr > td {
+	padding: 5px 15px !important;
 }
 
 .panel-heading-sharp {
