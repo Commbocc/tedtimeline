@@ -77,21 +77,30 @@ body {
 	}
 }
 
-.jumbo-parallax {
-
+.jumbotron {
 	h1, h2, h3, h4, h5, h6 {
 
 		color: #fff;
+		text-shadow: 2px 2px #333;
 
 		small {
 			color: #fff;
 		}
 	}
 
-	
-
-	// background-image: url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-476997316.jpg');
+	background-repeat: no-repeat;
 	background-position: center center;
+	// background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+.jumbo-parallax {
+	
+	// background-image: url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-476997316.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	background-size: cover;
 
 	// -webkit-animation-name: jumboImage;
@@ -112,6 +121,16 @@ body {
 
 
 
+}
+
+.btn-xl {
+	font-size: 0.9em;
+	padding: 15px;
+
+	@media (min-width: $screen-sm-min) {
+		font-size: 1.3em;
+		padding: 20px;
+	}
 }
 
 .panel-heading-sharp {
