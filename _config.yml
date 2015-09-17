@@ -5,7 +5,7 @@ description: > # ignore newlines
   Description
 # email: 
 
-baseurl: ""
+baseurl: "/FreedomToGO"
 url: ""
 # paginate: 10
 # paginate_path: "posts/:num"
