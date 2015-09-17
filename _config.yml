@@ -1,14 +1,14 @@
 # Site settings
-title: KayMic
-tagline: IT &amp; Web Development
+title: Freedom To Go
+tagline: It’s our future. How will we go?
 description: > # ignore newlines
-  Experienced Web Developer with extensive knowledge in Internet Services, Information Technology, and Digital Multimedia.
-email: kevin@kaymic.com
+  Description
+# email: 
 
 baseurl: ""
-url: "http://kaymic.com"
-paginate: 10
-paginate_path: "portfolio/:num"
+url: ""
+# paginate: 10
+# paginate_path: "posts/:num"
 
 # Build settings
 markdown: kramdown

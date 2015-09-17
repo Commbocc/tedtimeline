@@ -3,6 +3,25 @@
 
 $ ->
 
+
+	$('.to-carousel').click ->
+		$('#bs-example-navbar-collapse-1').collapse('hide')
+		$('html, body').animate { scrollTop: $('#infoJumbo').offset().top - 54 }, 1000
+		return
+
+	$('.to-top').click ->
+		event.preventDefault()
+		$('#bs-example-navbar-collapse-1').collapse('hide')
+		$('html, body').animate { scrollTop: $('body').offset().top - 74 }, 1000
+		return
+
+	$('.to-qa').click ->
+		event.preventDefault()
+		$('#bs-example-navbar-collapse-1').collapse('hide')
+		$('html, body').animate { scrollTop: $('#qa').offset().top - 54 }, 1000
+		return
+
+
 	# get started modal functions
 	# $(window).load ->
 	# 	$("#getStartedModal").modal "show"

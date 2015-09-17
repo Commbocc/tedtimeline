@@ -3,58 +3,126 @@
 
 @charset "utf-8";
 
-@import "bootswatch/superhero/variables";
+@import "bootswatch/lumen/variables";
 @import "bootstrap";
-@import "bootswatch/superhero/bootswatch";
+@import "bootswatch/lumen/bootswatch";
 
-h1.title { margin-top: 0 !important; }
 
-a.list-group-item { border-top: 1px solid #2b3e50; }
+body {
+	margin-top: 74px;
+}
 
-.media-heading em { font-size: 15px; font-weight: lighter; font-style: italic; }
+#mainNav {
+	border-radius: 0px;
 
-@media (max-width: 991px) {
-	.clear-md {
-		clear: both;
+	// background: #444444; /* Old browsers */
+	// background: -moz-linear-gradient(top,  #444444 0%, #555555 100%); /* FF3.6+ */
+	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+	// background: -webkit-linear-gradient(top,  #444444 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
+	// background: -o-linear-gradient(top,  #444444 0%,#555555 100%); /* Opera 11.10+ */
+	// background: -ms-linear-gradient(top,  #444444 0%,#555555 100%); /* IE10+ */
+	// background: linear-gradient(to bottom,  #444444 0%,#555555 100%); /* W3C */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
+
+}
+
+#mainJumbo {
+	margin-top: -20px;
+}
+
+#infoJumbo {
+	padding: 0px;
+}
+
+// #otherJumbo {
+// 	padding: 0px;
+// }
+
+#carousel-info-jumbo {
+	.item { 
+
+		height: 400px;
+		color: #fff;
+
+		background-position: center center;
+		background-size: cover;
+
+	}
+
+
+	#item0 {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
+		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-168504675.jpg'); /* FF3.6+ */
+		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('/images/ThinkstockPhotos-168504675.jpg'); /* Chrome,Safari4+ */
+		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-168504675.jpg'); /* Chrome10+,Safari5.1+ */
+		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-168504675.jpg'); /* Opera 11.10+ */
+		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-168504675.jpg'); /* IE10+ */
+		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-168504675.jpg'); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('/images/ThinkstockPhotos-168504675.jpg'); /* IE6-9 fallback on horizontal gradient */
+	}
+
+	#item1 {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
+		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-494419003.jpg'); /* FF3.6+ */
+		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('/images/ThinkstockPhotos-494419003.jpg'); /* Chrome,Safari4+ */
+		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-494419003.jpg'); /* Chrome10+,Safari5.1+ */
+		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-494419003.jpg'); /* Opera 11.10+ */
+		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-494419003.jpg'); /* IE10+ */
+		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-494419003.jpg'); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('/images/ThinkstockPhotos-494419003.jpg'); /* IE6-9 fallback on horizontal gradient */
+	}
+
+	#item2 {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
+		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-77136619.jpg'); /* FF3.6+ */
+		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('/images/ThinkstockPhotos-77136619.jpg'); /* Chrome,Safari4+ */
+		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-77136619.jpg'); /* Chrome10+,Safari5.1+ */
+		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-77136619.jpg'); /* Opera 11.10+ */
+		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-77136619.jpg'); /* IE10+ */
+		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('/images/ThinkstockPhotos-77136619.jpg'); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('/images/ThinkstockPhotos-77136619.jpg'); /* IE6-9 fallback on horizontal gradient */
 	}
 }
 
-.img-portfolio-thumb {
-	width: 128px;
-	padding: 2px;
-	line-height: 1.42857143;
-	background-color: #2b3e50;
-	border: 1px solid #dddddd;
-	border-radius: 0;
-	-webkit-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	display: inline-block;
+.jumbo-parallax {
+
+	
+
+	// background-image: url('/images/ThinkstockPhotos-476997316.jpg');
+	background-position: center center;
+	background-size: cover;
+
+	// -webkit-animation-name: jumboImage;
+	// animation-name: jumboImage;
+	// -webkit-animation-timing-function: linear;
+	// animation-timing-function: linear;
+	// -webkit-animation-iteration-count: infinite;
+	// animation-iteration-count: infinite;
+	// -webkit-animation-duration: 20s; 
+	// animation-duration: 20s;
+
+	// h2 {
+	// 	color: #fff;
+	// 	margin: 60px auto -20px;
+	// }
+
+	// text-shadow: 2px 2px #333;
+
+
+
 }
 
-.img-pull-right {
-	float: right;
+.panel-heading-sharp {
+	border-radius: 0px;
 }
 
-@media (max-width: 767px) {
-	.img-portfolio-thumb {
-		width: 96px;
-	}
-
-	.img-pull-right {
-		width: 100%;
-		text-align: center;
-	}
+@-webkit-keyframes jumboImage {
+	// 0%     {background-position: center top;}
+	// 50%    {background-position: center center;}
+	// 100%   {background-position: center top;}
 }
-
-#page-footer {
-	padding: 15px 0;
-	margin-top: 20px;
-	min-height: 150px;
-	background: #0C1F32;
-}
-
-.panel-bordered {
-	background: none;
-	border: solid 1px #4E5D6C;
+@keyframes jumboImage {
+	// 0%     {background-position: center top;}
+	// 50%    {background-position: center center;}
+	// 100%   {background-position: center top;}
 }
