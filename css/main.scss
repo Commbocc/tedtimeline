@@ -97,29 +97,16 @@ body {
 
 .jumbo-parallax {
 	
-	// background-image: url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-476997316.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
 
-	// -webkit-animation-name: jumboImage;
-	// animation-name: jumboImage;
-	// -webkit-animation-timing-function: linear;
-	// animation-timing-function: linear;
-	// -webkit-animation-iteration-count: infinite;
-	// animation-iteration-count: infinite;
-	// -webkit-animation-duration: 20s; 
-	// animation-duration: 20s;
 
-	// h2 {
-	// 	color: #fff;
-	// 	margin: 60px auto -20px;
-	// }
-
-	// text-shadow: 2px 2px #333;
-
-
+	@media (max-width: 992px) {
+		background-attachment: initial;
+		background-size: cover;
+	}
 
 }
 
@@ -140,16 +127,4 @@ body {
 .panel-heading-sharp {
 	border-radius: 0px;
 }
-
-@-webkit-keyframes jumboImage {
-	// 0%     {background-position: center top;}
-	// 50%    {background-position: center center;}
-	// 100%   {background-position: center top;}
-}
-@keyframes jumboImage {
-	// 0%     {background-position: center top;}
-	// 50%    {background-position: center center;}
-	// 100%   {background-position: center top;}
-}
-
 
