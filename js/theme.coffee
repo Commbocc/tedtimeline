@@ -18,7 +18,7 @@ $ ->
 	$('.to-qa').click ->
 		event.preventDefault()
 		$('#bs-example-navbar-collapse-1').collapse('hide')
-		$('html, body').animate { scrollTop: $('#qa').offset().top - 54 }, 1000
+		$('html, body').animate { scrollTop: $('#questions').offset().top - 54 }, 1000
 		return
 
 

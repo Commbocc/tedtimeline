@@ -7,6 +7,18 @@
 @import "bootstrap";
 @import "bootswatch/lumen/bootswatch";
 
+@mixin trans-bg-image($color, $image-url, $opacity: 0.6) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff851b+0,ff851b+100&amp;0.6+0,0.6+100 */
+	background-image: -moz-linear-gradient(top,  rgba($color, $opacity) 0%, rgba($color, $opacity) 100%), url($image-url); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color, $opacity)), color-stop(100%,rgba($color, $opacity))), url($image-url); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* IE10+ */
+	background-image: linear-gradient(to bottom,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ff851b', endColorstr='#99ff851b',GradientType=0 ), url($image-url); /* IE6-9 */
+}
+
+
 
 body {
 	margin-top: 74px;
@@ -14,35 +26,37 @@ body {
 
 #mainNav {
 	border-radius: 0px;
-
-	// background: #444444; /* Old browsers */
-	// background: -moz-linear-gradient(top,  #444444 0%, #555555 100%); /* FF3.6+ */
-	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#555555)); /* Chrome,Safari4+ */
-	// background: -webkit-linear-gradient(top,  #444444 0%,#555555 100%); /* Chrome10+,Safari5.1+ */
-	// background: -o-linear-gradient(top,  #444444 0%,#555555 100%); /* Opera 11.10+ */
-	// background: -ms-linear-gradient(top,  #444444 0%,#555555 100%); /* IE10+ */
-	// background: linear-gradient(to bottom,  #444444 0%,#555555 100%); /* W3C */
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
-
 }
 
 #mainJumbo {
 	margin-top: -20px;
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-476997316.jpg');
 }
 
 #infoJumbo {
 	padding: 0px;
+
+	h1, h2, h3, h4, h5, h6 {
+
+		color: #fff;
+
+		small {
+			color: #fff;
+		}
+	}
+
+	.lead { color: #fff; }
+
+
 }
 
-// #otherJumbo {
-// 	padding: 0px;
-// }
-
 #carousel-info-jumbo {
+
 	.item { 
 
-		height: 400px;
-		color: #fff;
+		// height: 300px;
+
+		padding: 20px 0px 70px;
 
 		background-position: center center;
 		background-size: cover;
@@ -51,36 +65,15 @@ body {
 
 
 	#item0 {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
-		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* FF3.6+ */
-		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* Chrome,Safari4+ */
-		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* Chrome10+,Safari5.1+ */
-		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* Opera 11.10+ */
-		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* IE10+ */
-		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg'); /* IE6-9 fallback on horizontal gradient */
+		@include trans-bg-image($brand-warning, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg');
 	}
 
 	#item1 {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
-		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* FF3.6+ */
-		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* Chrome,Safari4+ */
-		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* Chrome10+,Safari5.1+ */
-		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* Opera 11.10+ */
-		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* IE10+ */
-		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg'); /* IE6-9 fallback on horizontal gradient */
+		@include trans-bg-image($brand-primary, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg');
 	}
 
 	#item2 {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100&amp;0.65+0,0.65+100 */
-		background-image: -moz-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%, rgba(43,136,217,0.65) 50%, rgba(32,124,202,0.65) 51%, rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* FF3.6+ */
-		background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(59,103,158,0.65)), color-stop(50%,rgba(43,136,217,0.65)), color-stop(51%,rgba(32,124,202,0.65)), color-stop(100%,rgba(125,185,232,0.65))), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* Chrome,Safari4+ */
-		background-image: -webkit-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* Chrome10+,Safari5.1+ */
-		background-image: -o-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* Opera 11.10+ */
-		background-image: -ms-linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* IE10+ */
-		background-image: linear-gradient(45deg,  rgba(59,103,158,0.65) 0%,rgba(43,136,217,0.65) 50%,rgba(32,124,202,0.65) 51%,rgba(125,185,232,0.65) 100%), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a63b679e', endColorstr='#a67db9e8',GradientType=1 ), url('http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg'); /* IE6-9 fallback on horizontal gradient */
+		@include trans-bg-image($brand-success, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg');
 	}
 }
 
@@ -126,3 +119,5 @@ body {
 	// 50%    {background-position: center center;}
 	// 100%   {background-position: center top;}
 }
+
+
