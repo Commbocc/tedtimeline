@@ -7,7 +7,9 @@
 @import "bootstrap";
 @import "bootswatch/lumen/bootswatch";
 
-@mixin trans-bg-image($color, $image-url, $opacity: 0.6) {
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
+
+@mixin trans-bg-image($color, $image-url, $opacity: 0.45) {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff851b+0,ff851b+100&amp;0.6+0,0.6+100 */
 	background-image: -moz-linear-gradient(top,  rgba($color, $opacity) 0%, rgba($color, $opacity) 100%), url($image-url); /* FF3.6+ */
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color, $opacity)), color-stop(100%,rgba($color, $opacity))), url($image-url); /* Chrome,Safari4+ */
@@ -18,17 +20,33 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ff851b', endColorstr='#99ff851b',GradientType=0 ), url($image-url); /* IE6-9 */
 }
 
+$panel-important-base: #536F86 !default;
 
 
 body {
 	margin-top: 74px;
+	font-weight: 300;
 }
 
 #mainNav {
 	border-radius: 0px;
 }
 
+.container-lg {
+
+	padding: 20px 15px 30px;
+
+	@media (min-width: 992px) {
+		padding: 50px 15px 60px;
+	}
+}
+
+.media-lg { margin: 20px 0px !important; }
+
 .jumbotron {
+
+	font-family: 'Work Sans', sans-serif;
+
 	h1, h2, h3, h4, h5, h6 {
 
 		font-size: 1.8em;
@@ -38,8 +56,8 @@ body {
 		}
 
 		color: #fff;
-		text-shadow: 2px 2px #666;
-		filter: dropshadow(color=#666, offx=1, offy=1);
+		text-shadow: 2px 2px #333;
+		filter: dropshadow(color=#333, offx=1, offy=1);
 		display: block; 
 
 		small {
@@ -57,9 +75,17 @@ body {
 #mainJumbo {
 
 	font-size: 1.5em;
-
 	margin-top: -20px;
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
+
+	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/walk.jpg', 0.6);
+}
+
+#paths {
+	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/train.jpg');
+}
+
+#bikes {
+	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/bikes.jpg');
 }
 
 .jumbo-parallax {
@@ -81,21 +107,37 @@ body {
 
 	.panel-heading { color: #fff; }
 
-	$panel-important-base: #536F86 !default;
-
 	&.panel-1 { .panel-heading { background: lighten($panel-important-base, 20%); } }
 	&.panel-2 { .panel-heading { background: $panel-important-base; } }
 	&.panel-3 { .panel-heading { background: darken($panel-important-base, 20%); } }
 
 }
 
-.btn-xl {
-	font-size: 0.9em;
-	padding: 15px;
+.text-icon-1 { color: lighten($panel-important-base, 20%); }
+.text-icon-2 { color: $panel-important-base; }
+.text-icon-3 { color: darken($panel-important-base, 20%); }
 
-	@media (min-width: $screen-sm-min) {
-		font-size: 1.3em;
-		padding: 20px;
+
+#mainBtn {
+
+	background: none;
+	@include trans-bg-image($brand-primary, '', 0.25);
+	border: 3px $brand-primary solid;
+
+	&:hover {
+		margin-top: 0px;
+		@include trans-bg-image(darken($brand-primary, 5%), '', 0.25);
+		border: 3px darken($brand-primary, 5%) solid;
+	}
+
+	&.btn-xl {
+		font-size: 0.9em;
+		padding: 15px;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 1.3em;
+			padding: 20px;
+		}
 	}
 }
 

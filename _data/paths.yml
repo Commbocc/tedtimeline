@@ -1,4 +1,5 @@
 - title: "Stay The Course"
+  icon: car
   headline: "We do not raise any additional funding for transportation."
   body: "On this path, we need to pull money from other programs and services to address the growing backlog of transportation needs. Congestion likely continues, and quality of life decreases as other programs lose funding."
   cells:
@@ -8,6 +9,7 @@
     - item: "Continued Congestion"
 
 - title: "Address Our Challenges"
+  icon: road
   headline: "We invest moderately in our transportation future."
   body: "On this path, we raise enough additional funding to address the current backlog of transportation issues facing our county. Many roads get resurfaced or widened, and we begin to invest in bike lanes and strategic bus system improvements."
   cells:
@@ -20,6 +22,7 @@
     - item: "Bus System Improvements"
 
 - title: "Solve The Problem"
+  icon: train
   headline: "We invest fully in our transportation future."
   body: "On this path, we raise enough funding to address all current needs AND design a modern transportation network. Options like Bus Rapid Transit and Light Rail reduce congestion long-term and provide the capacity to handle our growing population."
   cells:
