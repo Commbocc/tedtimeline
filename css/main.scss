@@ -29,6 +29,7 @@ body {
 }
 
 #mainJumbo {
+	font-size: 1.5em;
 	margin-top: -20px;
 	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
 }
@@ -36,9 +37,11 @@ body {
 .jumbotron {
 	h1, h2, h3, h4, h5, h6 {
 
+		font-size: 3em;
+
 		color: #fff;
 		text-shadow: 2px 2px #666;
-		filter: dropshadow(color=#666, offx=2, offy=2);
+		filter: dropshadow(color=#666, offx=1, offy=1);
 		display: block; 
 
 		small {
@@ -65,6 +68,18 @@ body {
 		background-attachment: initial;
 		background-size: cover;
 	}
+
+}
+
+.panel-important {
+
+	.panel-heading { color: #fff; }
+
+	$panel-important-base: #536F86 !default;
+
+	&.panel-1 { .panel-heading { background: lighten($panel-important-base, 20%); } }
+	&.panel-2 { .panel-heading { background: $panel-important-base; } }
+	&.panel-3 { .panel-heading { background: darken($panel-important-base, 20%); } }
 
 }
 
