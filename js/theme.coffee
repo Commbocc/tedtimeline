@@ -3,6 +3,8 @@
 
 $ ->
 
+	$("#copyYear").text (new Date).getFullYear()
+
 
 	$('.to-carousel').click ->
 		$('#bs-example-navbar-collapse-1').collapse('hide')

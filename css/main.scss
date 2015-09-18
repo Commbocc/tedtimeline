@@ -33,55 +33,11 @@ body {
 	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
 }
 
-#infoJumbo {
-	padding: 0px;
-
-	h1, h2, h3, h4, h5, h6 {
-
-		color: #fff;
-
-		small {
-			color: #fff;
-		}
-	}
-
-	.lead { color: #fff; }
-
-
-}
-
-#carousel-info-jumbo {
-
-	.item { 
-
-		// height: 300px;
-
-		padding: 20px 0px 70px;
-
-		background-position: center center;
-		background-size: cover;
-
-	}
-
-
-	// #item0 {
-	// 	@include trans-bg-image($brand-warning, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-168504675.jpg');
-	// }
-
-	// #item1 {
-	// 	@include trans-bg-image($brand-primary, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-494419003.jpg');
-	// }
-
-	// #item2 {
-	// 	@include trans-bg-image($brand-success, 'http://commbocc.github.io/FreedomToGO/images/ThinkstockPhotos-77136619.jpg');
-	// }
-}
-
 .jumbotron {
 	h1, h2, h3, h4, h5, h6 {
 
-		color: #fff;
-		text-shadow: 2px 2px #333;
+		color: $gray-lighter;
+		text-shadow: 2px 2px #666;
 
 		small {
 			color: #fff;
