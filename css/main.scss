@@ -20,7 +20,8 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', endColorstr='#73000000',GradientType=0 );
 }
 
-$panel-important-base: #536F86 !default;
+// $panel-important-base: #536F86 !default;
+$panel-important-base: $brand-primary !default;
 
 
 body {
@@ -68,24 +69,29 @@ body {
 	background-position: center center;
 	// background-attachment: fixed;
 	background-size: cover;
+	background-color: #000;
 
 }
 
 #mainJumbo {
 
+	.container {
+		margin-top: 10%;
+	}
+
 	font-size: 1.5em;
 	margin-top: -20px;
 
-	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/walk.jpg', 0.55);
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk-dark.jpg');
 
 }
 
 #paths {
-	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/train.jpg');
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/train-dark.jpg');
 }
 
 #bikes {
-	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/bikes.jpg');
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/bikes-dark.jpg');
 }
 
 .jumbo-parallax {
@@ -107,15 +113,27 @@ body {
 
 	.panel-heading { color: #fff; }
 
-	&.panel-1 { .panel-heading { background: lighten($panel-important-base, 20%); } }
-	&.panel-2 { .panel-heading { background: $panel-important-base; } }
-	&.panel-3 { .panel-heading { background: darken($panel-important-base, 20%); } }
+	&.panel-1 { .panel-heading {
+		background: darken($panel-important-base, 20%); }
+	}
+	&.panel-2 { .panel-heading {
+		background: darken($panel-important-base, 10%); }
+	}
+	&.panel-3 { .panel-heading {
+		background: $panel-important-base; }
+	}
 
 }
 
-.text-icon-1 { color: lighten($panel-important-base, 20%); }
-.text-icon-2 { color: $panel-important-base; }
-.text-icon-3 { color: darken($panel-important-base, 20%); }
+.text-icon-1 {
+	color: darken($panel-important-base, 20%);
+}
+.text-icon-2 {
+	color: darken($panel-important-base, 10%);
+}
+.text-icon-3 {
+	color: $panel-important-base;
+}
 
 
 #mainBtn {
