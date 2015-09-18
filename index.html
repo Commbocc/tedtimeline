@@ -103,8 +103,8 @@ layout: default
 		</h3>
 	</header>
 	{% for faq in site.data.questions %}
-	<div class="row wow slideInRight">
-		<div class="col-sm-7">
+	<div class="row">
+		<div class="col-sm-7 wow slideInLeft">
 			<blockquote>
 				<p>
 					{{ faq.question }}
@@ -112,7 +112,7 @@ layout: default
 				<!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
 			</blockquote>
 		</div>
-		<div class="col-sm-5">
+		<div class="col-sm-5 wow fadeIn" data-wow-delay="1s">
 			{{ faq.answer }}
 		</div>
 	</div>
