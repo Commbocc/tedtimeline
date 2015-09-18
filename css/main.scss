@@ -36,8 +36,10 @@ body {
 .jumbotron {
 	h1, h2, h3, h4, h5, h6 {
 
-		color: $gray-lighter;
+		color: #fff;
 		text-shadow: 2px 2px #666;
+		filter: dropshadow(color=#666, offx=2, offy=2);
+		display: block; 
 
 		small {
 			color: #fff;
