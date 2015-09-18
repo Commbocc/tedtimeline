@@ -7,13 +7,17 @@
 		<ul class="list-inline text-center">
 			<ul class="list-inline text-center">
 
-				{% for link in site.data.menu_nav %}
-				{% if link.title %}
 				<li>
-					<a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+					<a href="{{ site.baseurl }}/#" class="to-top">Top</a>
 				</li>
-				{% endif %}
-				{% endfor %}
+
+				<li>
+					<a href="{{ site.baseurl }}/#paths" class="to-paths">The Paths Before Us</a>
+				</li>
+
+				<li>
+					<a href="{{ site.baseurl }}/#qa" class="to-qa">Common Questions</a>
+				</li>
 
 				<li>
 					<a href="#">
@@ -28,7 +32,7 @@
 
 			</ul>
 
-			<p>
+<!-- 			<p>
 				<ul class="list-inline text-center small">
 					<li>
 						<a href="#">Terms of Service</a>
@@ -36,11 +40,8 @@
 					<li>
 						<a href="#">Privacy Policy</a>
 					</li>
-					<li>
-						<a href="#">Return Policy</a>
-					</li>
 				</ul>
-			</p>
+			</p> -->
 
 			<div class="text-center small text-muted">
 				<p>
