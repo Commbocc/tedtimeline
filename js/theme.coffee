@@ -13,6 +13,9 @@ $ ->
 		$('.full-height').each ->
 			$(this).css 'min-height', (window.innerHeight - offsetTop) + 'px'
 			return
+		$('.container').each ->
+			$(this).css 'min-width', (window.innerWidth) + 'px'
+			return
 		return
 	resizeMainJumbo()
 	$(window).resize () ->
