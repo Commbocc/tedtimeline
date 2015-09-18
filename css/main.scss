@@ -79,6 +79,7 @@ body {
 	margin-top: -20px;
 
 	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/walk.jpg', 0.55);
+
 }
 
 #paths {
@@ -123,6 +124,8 @@ body {
 
 	background: none;
 	@include trans-bg-image($brand-primary, '', 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73ff0000', endColorstr='#73ff0000',GradientType=0 );
+
 	border: 3px $brand-primary solid;
 
 	&:hover {
