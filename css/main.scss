@@ -10,7 +10,6 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
 
 @mixin trans-bg-image($color, $image-url, $opacity: 0.45) {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff851b+0,ff851b+100&amp;0.6+0,0.6+100 */
 	background-image: url($image-url);
 	background-image: -moz-linear-gradient(top,  rgba($color, $opacity) 0%, rgba($color, $opacity) 100%), url($image-url); /* FF3.6+ */
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color, $opacity)), color-stop(100%,rgba($color, $opacity))), url($image-url); /* Chrome,Safari4+ */
@@ -26,7 +25,6 @@ $panel-important-base: #536F86 !default;
 
 body {
 	margin-top: 74px;
-	// font-weight: 300;
 }
 
 #mainNav {
