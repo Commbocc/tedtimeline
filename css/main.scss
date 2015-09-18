@@ -28,16 +28,14 @@ body {
 	border-radius: 0px;
 }
 
-#mainJumbo {
-	font-size: 1.5em;
-	margin-top: -20px;
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
-}
-
 .jumbotron {
 	h1, h2, h3, h4, h5, h6 {
 
-		font-size: 3em;
+		font-size: 1.8em;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 3em;
+		}
 
 		color: #fff;
 		text-shadow: 2px 2px #666;
@@ -54,6 +52,14 @@ body {
 	// background-attachment: fixed;
 	background-size: cover;
 
+}
+
+#mainJumbo {
+
+	font-size: 1.5em;
+
+	margin-top: -20px;
+	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk.jpg');
 }
 
 .jumbo-parallax {
