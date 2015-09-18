@@ -18,7 +18,7 @@
 	background-image: -o-linear-gradient(top,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* Opera 11.10+ */
 	background-image: -ms-linear-gradient(top,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* IE10+ */
 	background-image: linear-gradient(to bottom,  rgba($color, $opacity) 0%,rgba($color, $opacity) 100%), url($image-url); /* W3C */
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ff851b', endColorstr='#99ff851b',GradientType=0 ), url($image-url); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', endColorstr='#000000',GradientType=0 );
 }
 
 $panel-important-base: #536F86 !default;
@@ -78,7 +78,7 @@ body {
 	font-size: 1.5em;
 	margin-top: -20px;
 
-	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/walk.jpg', 0.6);
+	@include trans-bg-image(#000, 'http://commbocc.github.io/FreedomToGO/images/walk.jpg', 0.55);
 }
 
 #paths {
