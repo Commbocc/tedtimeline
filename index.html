@@ -51,7 +51,7 @@ layout: default
 <section class="container container-lg">
 	<div class="row">
 		{% for path in site.data.paths %}
-		<div class="col-md-4 wow fadeIn" data-wow-delay="{{ forloop.index }}s">
+		<div class="col-md-4 wow wow-responsive-remove-delay fadeIn" data-wow-delay="{{ forloop.index }}s">
 			<div class="panel panel-important panel-{{ forloop.index }}">
 				<header class="panel-heading">
 					<h3 class="panel-title text-center">{{ path.title }}</h3>
