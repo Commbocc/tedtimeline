@@ -8,7 +8,7 @@ $ ->
 	# dynamic copyright year
 	$("#copyYear").text (new Date).getFullYear()
 
-	# main jumbo height of window
+	# resize jumbo heights accordingly
 	resizeJumbo = ->
 		winHeight = (window.innerHeight - offsetTop)
 
@@ -19,6 +19,10 @@ $ ->
 		$('.height-half').each ->
 			$(this).css 'min-height', (winHeight * 0.5) + 'px'
 			return
+
+		$('.height').each ->
+			minHeight = $(this).find('.container').height()
+			$(this).innerHeight(minHeight)
 
 		$('.height > .container').each ->
 			$(this).css
