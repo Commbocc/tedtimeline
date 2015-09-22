@@ -1,12 +1,12 @@
-- title: Home
-  href: /
+- title: "The Situation"
+  href: "#whereWeAre"
+  class: "to-wwa"
+  
+- title: "Our Options"
+  href: "#paths"
+  class: "to-paths"
 
-- title: Products
-  href: /products/
-
-- title: Customer Service
-  href: /customer-service/
-
-- title: Contact
-  href: /contact/
+- title: "FAQs"
+  href: "#faqs"
+  class: to-faqs
 

@@ -9,14 +9,28 @@ $ ->
 	$("#copyYear").text (new Date).getFullYear()
 
 	# main jumbo height of window
-	resizeMainJumbo = ->
-		$('.full-height').each ->
-			$(this).css 'min-height', (window.innerHeight - offsetTop) + 'px'
+	resizeJumbo = ->
+		winHeight = (window.innerHeight - offsetTop)
+
+		$('.height-full').each ->
+			$(this).css 'min-height', winHeight + 'px'
 			return
+
+		$('.height-half').each ->
+			$(this).css 'min-height', (winHeight * 0.5) + 'px'
+			return
+
+		$('.height > .container').each ->
+			$(this).css
+				'position': 'absolute'
+				'margin-top': $(this).outerHeight() / -2
+			return
+
 		return
-	resizeMainJumbo()
-	$(window).resize () ->
-		resizeMainJumbo()
+
+	$(window).resize ->
+		resizeJumbo()
+	resizeJumbo()
 
 	# scroll tos
 	$('.to-top').click ->
@@ -37,10 +51,10 @@ $ ->
 		$('html, body').animate { scrollTop: $('#paths').offset().top - offsetTop }, 1000
 		return
 
-	$('.to-qa').click ->
+	$('.to-faqs').click ->
 		event.preventDefault()
 		$('#bs-example-navbar-collapse-1').collapse('hide')
-		$('html, body').animate { scrollTop: $('#questions').offset().top - offsetTop }, 1000
+		$('html, body').animate { scrollTop: $('#faqs').offset().top - offsetTop }, 1000
 		return
 
 	# parallax

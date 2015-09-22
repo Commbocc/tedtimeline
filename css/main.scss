@@ -32,6 +32,15 @@ body {
 	border-radius: 0px;
 }
 
+.height {
+	position: relative;
+	& > .container {
+		display: block;
+		width: 100%;
+		top: 50%;
+	}
+}
+
 .container-lg {
 
 	padding: 20px 15px 30px;
@@ -49,15 +58,15 @@ body {
 
 	h1, h2, h3, h4, h5, h6 {
 
-		font-size: 1.8em;
+		font-size: 2em;
 
 		@media (min-width: $screen-sm-min) {
 			font-size: 3em;
 		}
 
 		color: #fff;
-		text-shadow: 2px 2px #333;
-		filter: dropshadow(color=#333, offx=1, offy=1);
+		// text-shadow: 2px 2px #333;
+		// filter: dropshadow(color=#333, offx=1, offy=1);
 		display: block; 
 
 		small {
@@ -75,11 +84,7 @@ body {
 
 #mainJumbo {
 
-	.container {
-		margin-top: 10%;
-	}
-
-	font-size: 1.5em;
+	font-size: 1.6em;
 	margin-top: -20px;
 
 	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk-dark.jpg');
@@ -90,7 +95,7 @@ body {
 	background-image: url('http://commbocc.github.io/FreedomToGO/images/train-dark.jpg');
 }
 
-#questions {
+#faqs {
 	background-image: url('http://commbocc.github.io/FreedomToGO/images/bikes-dark.jpg');
 }
 
@@ -140,7 +145,7 @@ body {
 
 	background: none;
 	@include trans-bg-image($brand-primary, '', 0.25);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73ff0000', endColorstr='#73ff0000',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73158CBA', endColorstr='#73158CBA',GradientType=0 );
 
 	border: 3px $brand-primary solid;
 
@@ -151,12 +156,13 @@ body {
 	}
 
 	&.btn-xl {
-		font-size: 0.9em;
-		padding: 15px;
+		padding: 10px;
+
+		margin-top: 25px;
 
 		@media (min-width: $screen-sm-min) {
-			font-size: 1.3em;
-			padding: 20px;
+			font-size: 1em;
+			padding: 15px;
 		}
 	}
 }

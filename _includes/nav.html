@@ -15,33 +15,15 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<!-- <ul class="nav navbar-nav">
+			<ul class="nav navbar-nav">
 
 				{% for link in site.data.menu_nav %}
 				{% if link.title %}
 				<li class="{% if link.href == page.url %}active{% endif %}">
-					<a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
 				</li>
 				{% endif %}
 				{% endfor %}
-
-			</ul> -->
-
-			<ul class="nav navbar-nav">
-
-
-
-				<li class="">
-					<a href="{{ site.baseurl }}/#whereWeAre" class="to-wwa">Where We Are</a>
-				</li>
-
-				<li class="">
-					<a href="{{ site.baseurl }}/#paths" class="to-paths">The Paths Before Us</a>
-				</li>
-
-				<li class="">
-					<a href="{{ site.baseurl }}/#questions" class="to-qa">Common Questions</a>
-				</li>
 
 			</ul>
 

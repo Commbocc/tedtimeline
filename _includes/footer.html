@@ -11,17 +11,13 @@
 					<a href="{{ site.baseurl }}/#" class="to-top">Top</a>
 				</li>
 
-				<li>
-					<a href="{{ site.baseurl }}/#whereWeAre" class="to-wwa">Where We Are</a>
+				{% for link in site.data.menu_nav %}
+				{% if link.title %}
+				<li class="{% if link.href == page.url %}active{% endif %}">
+					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
 				</li>
-
-				<li>
-					<a href="{{ site.baseurl }}/#paths" class="to-paths">The Paths Before Us</a>
-				</li>
-
-				<li>
-					<a href="{{ site.baseurl }}/#qa" class="to-qa">Common Questions</a>
-				</li>
+				{% endif %}
+				{% endfor %}
 
 				<li>
 					<a href="#">
