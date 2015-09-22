@@ -8,31 +8,32 @@ $ ->
 	# dynamic copyright year
 	$("#copyYear").text (new Date).getFullYear()
 
+	# ie8 test
+	IsIE8Browser = ->
+		rv = -1
+		ua = navigator.userAgent
+		re = new RegExp('Trident/([0-9]{1,}[.0-9]{0,})')
+		if re.exec(ua) != null
+			rv = parseFloat(RegExp.$1)
+		rv == 4
+
 	# resize jumbo heights accordingly
 	resizeJumbo = ->
 		winHeight = (window.innerHeight - offsetTop)
 
-		# $('.height').each ->
-		# 	minHeight = $(this).find('.container').height()
-		# 	# $(this).innerHeight(minHeight)
-		# 	$(this).css
-		# 		'min-height': minHeight + 'px'
-
 		$('.height-full').each ->
 			$(this).css 'min-height', winHeight + 'px'
-			$(this).css '_height', winHeight + 'px'
 			return
 
 		$('.height-half').each ->
 			$(this).css 'min-height', (winHeight * 0.5) + 'px'
-			$(this).css '_height', (winHeight * 0.5) + 'px'
 			return
 
 		$('.height > .container').each ->
-			$(this).css
-				'position': 'absolute'
-				'_position': 'relative'
-				'margin-top': $(this).outerHeight() / -2
+			unless IsIE8Browser()
+				$(this).css
+					'position': 'absolute'
+					'margin-top': $(this).outerHeight() / -2
 			return
 
 		return
