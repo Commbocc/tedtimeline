@@ -3,11 +3,13 @@
 
 @charset "utf-8";
 
-@import "bootswatch/lumen/variables";
+// @import "bootswatch/lumen/variables";
 @import "bootstrap";
-@import "bootswatch/lumen/bootswatch";
+// @import "bootswatch/lumen/bootswatch";
 
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
+// @import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
+
+@import "timeline";
 
 @mixin trans-bg-image($color, $image-url, $opacity: 0.45) {
 	background-image: url($image-url);
@@ -20,165 +22,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', endColorstr='#73000000',GradientType=0 );
 }
 
-// $panel-important-base: #536F86 !default;
-$panel-important-base: $brand-primary !default;
-
-
 body {
 	margin-top: 74px;
 }
 
-#mainNav {
-	border-radius: 0px;
-}
-
-.height {
-	position: relative;
-	& > .container {
-		display: block;
-		width: 100%;
-		top: 50%;
-	}
-}
-
-.container-lg {
-
-	padding: 20px 15px 30px;
-
-	@media (min-width: 992px) {
-		padding: 50px 15px 60px;
-	}
-}
-
-.media-lg { margin: 20px 0px !important; }
-
-.jumbotron {
-
-	font-family: 'Work Sans', sans-serif;
-
-	h1, h2, h3, h4, h5, h6 {
-
-		font-size: 2em;
-
-		@media (min-width: $screen-sm-min) {
-			font-size: 3em;
-		}
-
-		color: #fff;
-		// text-shadow: 2px 2px #333;
-		// filter: dropshadow(color=#333, offx=1, offy=1);
-		display: block; 
-
-		small {
-			color: #fff;
-		}
-	}
-
-	background-repeat: no-repeat;
-	background-position: center center;
-	// background-attachment: fixed;
-	background-size: cover;
-	background-color: #000;
-
-}
-
-#mainJumbo {
-
-	font-size: 1.6em;
-	margin-top: -20px;
-
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/walk-dark.jpg');
-
-}
-
-#paths {
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/train-dark.jpg');
-}
-
-#faqs {
-	background-image: url('http://commbocc.github.io/FreedomToGO/images/bikes-dark.jpg');
-}
-
-.jumbo-parallax {
-	
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-
-
-	@media (max-width: 992px) {
-		background-attachment: initial;
-		background-size: cover;
-	}
-
-}
-
-.panel-important {
-
-	.panel-heading { color: #fff; }
-
-	&.panel-1 { .panel-heading {
-		background: darken($panel-important-base, 20%); }
-	}
-	&.panel-2 { .panel-heading {
-		background: darken($panel-important-base, 10%); }
-	}
-	&.panel-3 { .panel-heading {
-		background: $panel-important-base; }
-	}
-
-}
-
-.text-icon-1 {
-	color: darken($panel-important-base, 20%);
-}
-.text-icon-2 {
-	color: darken($panel-important-base, 10%);
-}
-.text-icon-3 {
-	color: $panel-important-base;
-}
-
-
-#mainBtn {
-
-	background: none;
-	@include trans-bg-image($brand-primary, '', 0.25);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73158CBA', endColorstr='#73158CBA',GradientType=0 );
-
-	border: 3px $brand-primary solid;
-
-	&:hover {
-		margin-top: 0px;
-		@include trans-bg-image(darken($brand-primary, 5%), '', 0.25);
-		border: 3px darken($brand-primary, 5%) solid;
-	}
-
-	&.btn-xl {
-		padding: 10px;
-
-		margin-top: 25px;
-
-		@media (min-width: $screen-sm-min) {
-			font-size: 1em;
-			padding: 15px;
-		}
-	}
-}
-
-.table-condensed > tbody > tr > td {
-	padding: 5px 15px !important;
-}
-
-.panel-heading-sharp {
-	border-radius: 0px;
-}
-
-@media screen and (max-width: 992px) {
-    .wow-responsive-remove-delay {
-        // animation-name: none !important;
-        // visibility: visible !important;
-        animation-delay: 0s !important;
-    }
-}

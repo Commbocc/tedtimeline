@@ -1,11 +1,3 @@
-- title: "The Situation"
-  href: "#whereWeAre"
-  class: "to-wwa"
-  
-- title: "Our Options"
-  href: "#paths"
-  class: "to-paths"
-
-- title: "FAQs"
-  href: "#faqs"
-  class: "to-faqs"
+- title: "Home"
+  href: "#"
+  class: 

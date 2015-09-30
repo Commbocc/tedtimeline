@@ -17,26 +17,50 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 
-				{% for link in site.data.menu_nav %}
+				<!-- {% for link in site.data.menu_nav %}
 				{% if link.title %}
 				<li class="{% if link.href == page.url %}active{% endif %}">
 					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
 				</li>
 				{% endif %}
-				{% endfor %}
+				{% endfor %} -->
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jump to Year <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						{% for post in site.posts %}
+						{% unless post.next %}
+						<li>
+							<a href="#year{{ post.date | date: '%Y' }}">
+								{{ post.date | date: '%Y' }}
+							</a>
+						</li>
+						{% else %}
+						{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+						{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+						{% if year != nyear %}
+						<li>
+							<a href="#year{{ post.date | date: '%Y' }}">
+								{{ post.date | date: '%Y' }}
+							</a>
+						</li>
+						{% endif %}
+						{% endunless %}
+						{% endfor %}
+					</ul>
+				</li>
 
 			</ul>
 
-			<ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+
+
+			<!-- <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
 
 				<p class="navbar-text">
 
-					<a href="#" class="label label-primary">#FreedomToGo</a>
-					<a href="#" class="label label-primary">#LetsTalkHC</a>
-
 				</p>
 
-			</ul>
+			</ul> -->
 
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->

@@ -1,11 +1,11 @@
 # Site settings
-title: Freedom To Go
-tagline: It’s our future. How will we go?
+title: Hillsborough TED Timeline
+tagline: SiteCore Style Guide
 description: > # ignore newlines
   Description
 # email: 
 
-baseurl: "/FreedomToGO"
+baseurl: "/styleguide"
 url: "http://commbocc.github.io"
 # paginate: 10
 # paginate_path: "posts/:num"
