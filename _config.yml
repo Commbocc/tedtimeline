@@ -5,7 +5,7 @@ description: > # ignore newlines
   Description
 # email: 
 
-baseurl: "/styleguide"
+baseurl: "/tedtimeline"
 url: "http://commbocc.github.io"
 # paginate: 10
 # paginate_path: "posts/:num"
