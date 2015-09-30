@@ -5,8 +5,8 @@ description: > # ignore newlines
   Description
 # email: 
 
-baseurl: "/tedtimeline"
-url: "http://commbocc.github.io"
+baseurl: ""
+url: "http://ted.hillsboroughcdms.org"
 # paginate: 10
 # paginate_path: "posts/:num"
 
