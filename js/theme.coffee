@@ -16,4 +16,4 @@ $ ->
 				# newMargin = 100
 
 				$(this).css
-					marginTop: '-' + (prevSibHeight * 0.45) + 'px'
+					marginTop: '-' + (prevSibHeight * 0.40) + 'px'

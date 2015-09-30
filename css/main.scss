@@ -3,9 +3,9 @@
 
 @charset "utf-8";
 
-// @import "bootswatch/lumen/variables";
+@import "bootswatch/flatly/variables";
 @import "bootstrap";
-// @import "bootswatch/lumen/bootswatch";
+@import "bootswatch/flatly/bootswatch";
 
 // @import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
 
@@ -26,3 +26,18 @@ body {
 	margin-top: 74px;
 }
 
+#mainJumbo {
+	margin-top: -29px;
+	@include trans-bg-image($brand-primary, 'http://commbocc.github.io/tedtimeline/images/bus.jpg', 0.25);
+
+	background-repeat: no-repeat;
+	background-position: center center;
+	// background-attachment: fixed;
+	background-size: cover;
+
+
+	@media (max-width: 992px) {
+		background-attachment: initial;
+		background-size: cover;
+	}
+}
