@@ -28,17 +28,17 @@ body {
 
 #mainJumbo {
 	margin-top: -29px;
-	@include trans-bg-image($brand-primary, 'http://commbocc.github.io/tedtimeline/images/bus.jpg', 0.4);
+	background-image: url('http://commbocc.github.io/tedtimeline/images/bus-blue-overlay.jpg');
 
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center -281px;
 	// background-attachment: fixed;
 	background-size: cover;
 
 
-	@media (max-width: 992px) {
-		background-attachment: initial;
-		background-size: cover;
+	@media (min-width: 991px) {
+		background-position: center -1631px;
+		background-size: initial;
 	}
 
 	h1 {
