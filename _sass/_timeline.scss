@@ -2,6 +2,16 @@
 	margin-top: 30px;
 }
 
+.timeline {
+
+	.timeline-body {
+		ul {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
 @media (min-width: $screen-md-min) {
 
 	.timeline {
@@ -139,7 +149,8 @@
 	}
 
 	.timeline-body > {
-		p, ul {
+
+		p {
 			// margin-bottom: 0;
 		}
 		p + p {
