@@ -14,13 +14,13 @@ $ ->
 		return
 
 	# scroll tos
-	$('.to-top').click ->
+	$('.to-top').click (event) ->
 		event.preventDefault()
 		$('#bs-example-navbar-collapse-1').collapse('hide')
 		$('html, body').animate { scrollTop: $('body').offset().top - 74 }, 1000
 		return
 	
-	$('.to-year').click ->
+	$('.to-year').click (event) ->
 		event.preventDefault()
 		$('#bs-example-navbar-collapse-1').collapse('hide')
 		$('html, body').animate { scrollTop: $('#year'+$(this).data('year')).offset().top - 74 }, 1000

@@ -36,8 +36,8 @@ layout: default
 		{% endcapture %}
 
 		{% if theyear != thisiteryear %}
-		<li id="year{{ post.date | date: '%Y' }}" class="hidden-xs hidden-sm date-stamp">
-			<div class="timeline-badge primary">{{ theyear }}</div>
+		<li id="year{{ post.date | date: '%Y' }}" class="date-stamp">
+			<div class="hidden-xs hidden-sm timeline-badge primary">{{ theyear }}</div>
 		</li>
 		{% endif %}
 
