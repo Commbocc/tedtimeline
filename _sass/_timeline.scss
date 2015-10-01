@@ -105,6 +105,10 @@
 					border-top-left-radius: 50%;
 					border-bottom-right-radius: 50%;
 					border-bottom-left-radius: 50%;
+
+					// colors
+					&.purple { background-color: #551A8B; }
+
 				}
 			}
 			&.timeline-inverted > .timeline-panel {
