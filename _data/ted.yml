@@ -62,6 +62,8 @@
     - item: "Project Specifics Open House Public Workshop at Charles J. Fendig Public Library"
 
 - date: 2015-09-21-0
+  badge_color: warning
+  badge_icon: search
   items:
     - item: "Sherriff Requested to Audit GO Hillsborough Procurement"
     - item: "The Hillsborough County Administrator requested Hillsborough County Sheriff’s Office to investigate whether state ethics law were violated during procurement of Parsons Brinckerhoff in connection with the GO Hillsborough initiative. All work by Parsons Brinckerhoff on GO Hillsborough is suspended until the investigation is complete."
@@ -80,6 +82,8 @@
     - item: "Project Specifics Open House Public Workshop at New Tampa Regional Library "
 
 - date: 2015-09-16-0
+  badge_color: warning
+  badge_icon: search
   items:
     - item: "Hillsborough County Commissioners Request GO Hillsborough Audit"
     - item: "BOCC requested the Hillsborough County Internal Auditor to conduct an independent audit of the GO Hillsborough initiative, to include a procurement and process review of the initiative, and bring back a scope of work at the next Board meeting (Off Agenda Item)."
@@ -234,6 +238,8 @@
     - item: "[Memo](http://www.hillsboroughcounty.org/DocumentCenter/View/16803 )"
 
 - date: 2015-05-06-0
+  badge_color: success
+  badge_icon: usd
   items:
     - item: "Additional Funding for the Transportation Initiative Approved by BOCC"
     - item: "BOCC authorized a $47,500.00 work order revision for costs to support the additional public workshops requested by the PLG on January 14, 2015, increasing the Parsons Brinckerhoff work order to $998,136.63 (BOCC Agenda Item A-41)."
@@ -263,8 +269,8 @@
 
 - date: 2015-04-22-0
   subtitle: "TED PLG Workshop"
+  content: "Discussion on public engagement process and GO Hillsborough Issues and Opportunities report."
   items:
-    - item: "Discussion on public engagement process and GO Hillsborough Issues and Opportunities report."
     - item: "[Agenda](http://hillsboroughcounty.org/DocumentCenter/View/16190 )"
     - item: "[Report -](http://gohillsborough.org/wp-content/uploads/2015/04/GoHills_-IO-Report_4-10.pdf )"
     - item: "[Watch video](http://65.49.32.144/Hillsborough/53ceb82e-551d-4123-9734-6e36aeef8bc8/Trans_Econ_Dev_PG_4_22_2015A/presentation_file/mgpresenter.html?Stream=low )"
@@ -338,6 +344,8 @@
     - item: "Understanding the Issues Open House Public Workshop at St. Timothy Catholic Church"
 
 - date: 2015-03-12-0
+  badge_color: warning
+  badge_icon: search
   items:
     - item: "County Auditor Completes Assessment of Parsons Brinckerhoff Procurement "
     - item: "No material concerns were identified during a preliminary assessment by Hillsborough County Internal Auditor of the procurement of the services from Parsons Brinckerhoff. Citizen initiated complaint is closed with no recommendation for further review."
@@ -353,8 +361,8 @@
 
 - date: 2015-03-05-0
   subtitle: "TED PLG Workshop"
+  content: "Discussion on public engagement process and verbal report on proposed audit scope of work for public input."
   items:
-    - item: "Discussion on public engagement process and verbal report on proposed audit scope of work for public input."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/14662 )"
     - item: "[Presentation – GO Hillsborough Community Workshop Series by George Walton, Parsons Brinckerhoff](http://www.hillsboroughcounty.org/DocumentCenter/View/14663 )"
     - item: "[Watch video](http://65.49.32.144/Hillsborough/1cdf6d18-6c62-4495-bdf4-b425ac26ed51/Trans_Econ_Dev_PG_CC_3_5_2015/presentation_file/mgpresenter.html?Stream=low )"
