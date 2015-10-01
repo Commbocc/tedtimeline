@@ -190,6 +190,8 @@
 
 - date: 2015-07-16-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on Community Transportation Plan and continued Phase 2 community engagement to complete 10-year transportation project list to accompany proposed sale tax referendum, including 56 additional Project Specifics meetings at libraries. Hillsborough County Administrator discloses $325,000 will be required to complete Phase 2 community meetings, cost shared with Tampa Hillsborough Expressway Authority, Plant City, Temple Terrace and Tampa. Hillsborough County share of Phase 2 cost are within administrative approval authority and a work order is being developed for Parsons Brinckerhoff."
   items:
     - item: "[Agenda](http://hillsboroughcounty.org/DocumentCenter/View/16189 )"
@@ -204,6 +206,8 @@
 
 - date: 2015-06-11-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "PLG receives the Community Transportation Plan Findings and Recommendations from Parsons Brinckerhoff. One-half percent sales tax is presented as the funding option with the majority of public support. "
     - item: "[Agenda](http://agenda.hillsboroughcounty.org/cache/00003/596/Policy%20Leadership%20Agenda%20061115.pdf )"
@@ -269,6 +273,8 @@
 
 - date: 2015-04-22-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on public engagement process and GO Hillsborough Issues and Opportunities report."
   items:
     - item: "[Agenda](http://hillsboroughcounty.org/DocumentCenter/View/16190 )"
@@ -361,6 +367,8 @@
 
 - date: 2015-03-05-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on public engagement process and verbal report on proposed audit scope of work for public input."
   items:
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/14662 )"
@@ -417,6 +425,8 @@
 
 - date: 2015-02-12-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on public participation process and meeting schedule. Parson Brinckerhoff unveils GO Hillsborough website, iNeighborhood application, and social media channels. Hillsborough County Chief Information and Innovation Officer describes the establishment of Hillsborough County social media archiving and a Hillsborough County email duplication to maintain records and ensure transparency of GO Hillsborough electronic engagement. Hillsborough County Administrator the offered possibility of a Hillsborough County Clerk of Court audit of GO Hillsborough public engagement records."
   images:
     - image: '{{ site.baseurl }}/images/gohills-logo.jpg'
@@ -426,6 +436,8 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/0f7df348-3aa5-4076-a6d0-659871907e1e/Trans_Econ_Dev_PG_2_12_2015/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2015-01-22-0
+  badge_color: success
+  badge_icon: usd
   items:
     - item: "Additional Funding for the Transportation Initiative Approved by BOCC "
     - item: "BOCC approves a budget amendment moving $500,000 from the Financial System Replacement project to Public Works Department budget for additional services for the TED PLG and authorizes Parsons Brinckerhoff work order increase to $950,686.56 (BOCC Agenda Item A-29)."
@@ -435,6 +447,8 @@
 
 - date: 2015-01-14-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on feedback from stakeholders and presentation on FDOT express lane master plan. Parsons Brinckerhoff provides a technical work update and the outline for public engagement to include 28 public workshop meetings. PLG directs staff to add eight additional community workshop meetings."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/14327 )"
@@ -442,6 +456,8 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/3057a3f2-a609-4545-8e27-afe290fdbaff/Trans_Econ_Dev_WS_1_14_2015/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2014-11-26-0
+  badge_color: success
+  badge_icon: usd
   items:
     - item: "Additional Funding for the Transportation Initiative "
     - item: "Parsons Brinckerhoff work order is increased to $498,491.15 under County Administrator authority to support data collection and analysis, public engagement, and public meetings, including support by subconsultants Jacobs Engineering and The Leytham Group. "
@@ -455,6 +471,8 @@
 
 - date: 2014-10-21-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on the TED process and stakeholder meetings, introduction of Parsons Brinkerhoff, and next scope of initiative and funding needs."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/13545 )"
@@ -462,6 +480,8 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/da6376ce-61e4-43b0-81f5-f91f73424e9d/Trans_Econ_Dev_WS_10_21_2014/presentation_file/mgpresenter.html?Stream=low )"
 
 - date: 2014-09-25-0
+  badge_color: success
+  badge_icon: usd
   items:
     - item: "Initial Work Order Issued for Parson Brinckerhoff "
     - item: "A $53,234 work order PWGC20140011 is issued by Hillsborough County Public Works Department for work by Parsons Brinckerhoff to continue initial transportation plan development and participate in meetings."
@@ -475,6 +495,8 @@
 
 - date: 2014-08-12-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on the Comprehensive Mobility Proposal. PLG recommends staff engage someone in the private sector with transportation experience to assist with the public discussion process, specifically someone with successful experience in transportation referendums. "
     - item: "[Proposal Presentation -](http://www.hillsboroughcounty.org/DocumentCenter/View/12876 )"
@@ -500,6 +522,8 @@
 
 - date: 2014-05-28-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on the TED overview, public engagement approach, Key Economic Spaces, transportation survey, proposed governance models, and preview of proposed business plan. PLG requests proposal from staff for repurposing HART as the TED governing agency."
   items:
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/11999 )"
@@ -518,6 +542,8 @@
 
 - date: 2014-03-26-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on the TED overview, governance, and public engagement approach. PLG recommends staff hires a professional public relations firm to assist with specialized public engagement tasks, such as polling."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/11299 )"
@@ -530,6 +556,8 @@
 
 - date: 2014-02-26-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on Key Economic Spaces, governance, and public engagement strategy."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/11195 )"
@@ -539,6 +567,8 @@
 
 - date: 2014-01-15-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on Key Economic Spaces, business plan, and governance."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/10590 )"
@@ -547,6 +577,8 @@
 
 - date: 2013-12-11-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on transportation performance measures, economic competitive sites, and long range transportation plan. "
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/10299 )"
@@ -556,13 +588,14 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/8cf2f77f-41b3-47e0-a65a-ac5ea485a471/Trans_Econ_Dev_WS_12_11_2013/presentation_file/mgpresenter.html )"
 
 - date: 2013-12-02-0
-  items:
-    - item: "TED Community Conversation Meeting at Riverview Civic Center"
+  content: "TED Community Conversation Meeting at Riverview Civic Center"
   videos:
     - video: "7KH17jekX94"
 
 - date: 2013-11-13-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on TED guiding principles and the interrelationship of transportation to key economic spaces."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/9983 )"
@@ -572,13 +605,14 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/0d3b91e7-6801-497b-8fa7-5d4d3e289f7a/Trans_Econ_Dev_WS_11_13_2013/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2013-11-04-0
-  items:
-    - item: "TED Community Conversation Meeting at Strawberry Crest High School"
+  content: "TED Community Conversation Meeting at Strawberry Crest High School"
   videos:
     - video: "xn8-cf_O9g0"
 
 - date: 2013-10-09-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: | 
     Discussion on the Florida Department of Transportation perspective on regional transportation interconnectivity.
 
@@ -588,13 +622,14 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/acd4ac46-c3ad-4f02-be24-e3375af9914e/Trans_Econ_Dev_WS_10_09_2013/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2013-10-07-0
-  items:
-    - item: "TED Community Conversation Meeting at Sickles High School"
+  content: "TED Community Conversation Meeting at Sickles High School"
   videos:
     - video: "3Sdoq34Vjlg"
 
 - date: 2013-09-25-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion on perspectives of other organizations on transportation to support economic development."
   items:
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/9035 )"
@@ -607,6 +642,8 @@
 
 - date: 2013-08-14-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   items:
     - item: "Discussion on cost-effective transportation investments to support job growth and public engagement philosophy. "
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/16807 )"
@@ -619,6 +656,8 @@
 
 - date: 2013-07-23-0
   subtitle: "TED PLG Workshop"
+  badge_color: primary
+  badge_icon: cogs
   content: "Discussion with business leaders on the transportation infrastructure that is needed for business development and job growth."
   items:
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/16806 )"
