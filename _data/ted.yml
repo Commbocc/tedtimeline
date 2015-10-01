@@ -571,10 +571,12 @@
 
 - date: 2013-10-09-0
   subtitle: "TED PLG Workshop"
+  content: | 
+    Discussion on the Florida Department of Transportation perspective on regional transportation interconnectivity.
+
+    <a class="btn btn-block btn-primary" href="{{ site.baseurl }}/modals/2013-10-09-fdot-pres" data-toggle="modal" data-target="#defaultModal">FDOT Presentation</a>
   items:
-    - item: "Discussion on the Florida Department of Transportation perspective on regional transportation interconnectivity."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/9554 )"
-    - item: "[Presentation - Florida Department of Transportation Perspectives by Paul Steinman, FDOT](http://www.hillsboroughcounty.org/DocumentCenter/View/9774 )"
     - item: "[Watch video](http://65.49.32.144/Hillsborough/acd4ac46-c3ad-4f02-be24-e3375af9914e/Trans_Econ_Dev_WS_10_09_2013/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2013-10-07-0
@@ -585,14 +587,13 @@
 
 - date: 2013-09-25-0
   subtitle: "TED PLG Workshop"
+  content: "Discussion on perspectives of other organizations on transportation to support economic development."
   items:
-    - item: "Discussion on perspectives of other organizations on transportation to support economic development."
     - item: "[Agenda](http://www.hillsboroughcounty.org/DocumentCenter/View/9035 )"
     - item: "[Watch video](http://65.49.32.144/Hillsborough/c8ba149b-75d3-4a42-8244-2a7aee0eff70/Transportation__Economic_Dev_09_25_2013/presentation_file/mgpresenter.html?Stream=low)"
 
 - date: 2013-09-16-0
-  items:
-    - item: "TED Community Conversation Meeting at King High School"
+  content: "TED Community Conversation Meeting at King High School"
   videos:
     - video: "36hDHKFrzVc"
 

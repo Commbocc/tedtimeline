@@ -46,7 +46,7 @@ layout: default
 		{% endcapture %}
 
 		<li class="wow fadeInUp {{ thecycle }}">
-			<div class="hidden-xs hidden-sm timeline-badge {% if post.badge_color %}{{ post.badge_color }}{% else %}primary{% endif %}">
+			<div class="hidden-xs hidden-sm timeline-badge {% if post.badge_color %}{{ post.badge_color }}{% else %}default{% endif %}">
 				<i class="fa fa-{% if post.badge_icon %}{{ post.badge_icon }}{% else %}calendar{% endif %}"></i>
 			</div>
 			<div class="timeline-panel">

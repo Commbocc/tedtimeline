@@ -3,7 +3,7 @@ title: TED Timeline
 tagline: Hillsborough County, FL
 description: > # ignore newlines
   Description
-# email: 
+google_analytics: UA-63036279-4
 
 baseurl: ""
 url: "http://ted.hillsboroughcdms.org"
