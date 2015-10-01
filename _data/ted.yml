@@ -253,7 +253,7 @@
     - item: "[Watch video](http://65.49.32.144/Hillsborough/820ebde3-9117-4126-9ee3-8a2b68258fd6/Trans_Econ_Dev_06_11_2015/presentation_file/mgpresenter.html?Stream=low  )"
 
 - date: 2015-05-21-0
-  badge_icon: phone
+  badge_icon: users
   items:
     - item: "Finding Consensus Telephone Town Hall Meeting"
 
@@ -294,7 +294,7 @@
     - item: "[Work Order Revision #3](http://www.hillsboroughcounty.org/DocumentCenter/View/16765  )"
 
 - date: 2015-05-04-0
-  badge_icon: phone
+  badge_icon: users
   items:
     - item: "Making Choices Telephone Town Hall Meeting"
 
@@ -369,7 +369,7 @@
     - item: "Making Choices Open House Public Workshop at SouthShore Regional Library"
 
 - date: 2015-04-02-0
-  badge_icon: phone
+  badge_icon: users
   items:
     - item: "Exploring Options Telephone Town Hall Meeting"
 
@@ -394,7 +394,7 @@
     - item: "Exploring Options Open House Public Workshop at Omar K. Lightfoot Center"
 
 - date: 2015-03-19-0
-  badge_icon: phone
+  badge_icon: users
   items:
     - item: "Understanding the Issues Telephone Town Hall Meeting "
 
