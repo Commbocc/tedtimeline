@@ -14,58 +14,6 @@ layout: default
 
 <div class="container">
 
-	<!-- Modal -->
-	<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog" aria-labelledby="defaultModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content"></div>
-		</div>
-	</div>
-	<!-- <a href="{{ site.baseurl }}/modals/test" data-toggle="modal" data-target="#defaultModal">Click me</a> -->
+	{% include _timeline.html %}
 
-
-	<ul class="timeline list-unstyled">
-
-		{% for post in site.posts %}
-
-		{% capture thecycle %}
-		{% cycle '', 'timeline-inverted' %}
-		{% endcapture %}
-
-		{% capture theyear %}
-		{{ post.date | date: '%Y' }}
-		{% endcapture %}
-
-		{% if theyear != thisiteryear %}
-		<li id="year{{ post.date | date: '%Y' }}" class="date-stamp">
-			<div class="hidden-xs hidden-sm timeline-badge primary">{{ theyear }}</div>
-		</li>
-		{% endif %}
-
-		{% capture thisiteryear %}
-		{{ post.date | date: '%Y' }}
-		{% endcapture %}
-
-		<li class="wow fadeInUp {{ thecycle }}">
-			<div class="hidden-xs hidden-sm timeline-badge {% if post.badge_color %}{{ post.badge_color }}{% else %}default{% endif %}">
-				<i class="fa fa-{% if post.badge_icon %}{{ post.badge_icon }}{% else %}calendar{% endif %}"></i>
-			</div>
-			<div class="timeline-panel">
-				<div class="timeline-heading">
-					<h4 class="timeline-title">
-						{{ post.date | date: "%B %-d, %Y" }}
-						{% if post.subtitle != '' %}
-						<br>
-						<small>{{ post.subtitle }}</small>
-						{% endif %}
-					</h4>
-				</div>
-				<div class="timeline-body">
-					{{ post.content }}
-				</div>
-			</div>
-		</li>
-
-		{% endfor %}
-
-	</ul>
 </div>
