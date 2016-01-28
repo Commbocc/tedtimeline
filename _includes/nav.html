@@ -17,14 +17,6 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 
-				<!-- {% for link in site.data.menu_nav %}
-				{% if link.title %}
-				<li class="{% if link.href == page.url %}active{% endif %}">
-					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
-				</li>
-				{% endif %}
-				{% endfor %} -->
-
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jump to Year <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -50,17 +42,23 @@
 					</ul>
 				</li>
 
+				{% for link in site.data.menu_nav %}
+				{% if link.title %}
+				<li class="{% if link.href == page.url %}active{% endif %}">
+					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+
 			</ul>
 
 
 
-			<!-- <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+			<ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
 
-				<p class="navbar-text">
-
-				</p>
-
-			</ul> -->
+				<li><a href="http://hillsboroughcounty.org" target="_blank">Hillsborough County</a></li>
+				
+			</ul>
 
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
