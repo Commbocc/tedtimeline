@@ -1,8 +1,6 @@
 # Site settings
-title: TED Timeline
+title: Actions on the Transportation Initiative
 tagline: Hillsborough County, FL
-description: > # ignore newlines
-  Description
 google_analytics: UA-63036279-4
 
 baseurl: ""
