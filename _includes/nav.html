@@ -45,7 +45,7 @@
 				{% for link in site.data.menu_nav %}
 				{% if link.title %}
 				<li class="{% if link.href == page.url %}active{% endif %}">
-					<a href="{{ link.href | prepend: site.baseurl }}" class="{{ link.class }}">{{ link.title }}</a>
+					<a href="{{ link.href }}" class="{{ link.class }}">{{ link.title }}</a>
 				</li>
 				{% endif %}
 				{% endfor %}
