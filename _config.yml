@@ -5,8 +5,8 @@ google_analytics: UA-63036279-4
 
 future: true
 
-baseurl: ""
-url: "http://ted.hillsboroughcdms.org"
+baseurl: "/tedtimeline"
+# url: "http://ted.hillsboroughcdms.org"
 # paginate: 10
 # paginate_path: "posts/:num"
 
